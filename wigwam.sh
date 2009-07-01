@@ -25,6 +25,7 @@
 # 
 # @author Wojciech Sznapka
 # @date 2009-07-01
+# @licence GPL
 
 usage="Usage $0 index_name [-percent][-value][-both][-sign][-conky]"
 
