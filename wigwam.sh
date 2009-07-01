@@ -23,7 +23,7 @@
 #   ./wigwam.sh WIG20 -both
 #   ./wigwam.sh WIG20 -sign
 # 
-# @author Wojciech Sznapka
+# @author Wojciech Sznapka <wojtek@sznapka.pl>
 # @date 2009-07-01
 # @licence GPL
 
