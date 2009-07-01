@@ -1,4 +1,30 @@
 #!/bin/bash
+# Wigwam
+# Prosty skrypt do pobierania notowań Giełdowych
+#
+# Używanie:
+# ./wigwam.sh nazwa_indeksu [sposob_wyswietlania]
+# nazwa_indeksu:
+#   WIG
+#   WIG20
+#   mWIG40
+#   sWIG80
+# sposob_wyswietlania
+#   -percent (zmiena procentowa z znakiem)
+#   -value (wartość indeksu)
+#   -both (zmiana procentowa i wartość indeksu)
+#   -sign (znak zmiany)
+#
+# Przykłady użycia:
+#   ./wigwam.sh WIG20 -percent
+#   ./wigwam.sh WIG -value
+#   ./wigwam.sh sWIG80 -percent -value
+#   ./wigwam.sh WIG20 -both
+#   ./wigwam.sh WIG20 -sign
+# 
+# @author Wojciech Sznapka
+# @date 2009-07-01
+
 if [ -z $1 ]; then
   echo
   echo "Usage $0 index_name [-percent][-value][-both][-sign]"
