@@ -40,9 +40,9 @@ if [ ${1:0:1} == "-" ]; then
   exit
 fi
 
-base=`wget -qO- http://m.gpw.pl/ | egrep -o "$1&nbsp;[^%]+?[0-9\.]+?%[^\.]*[0-9\.]+"`
-percent=`echo $base |egrep -o "[-\+]?[0-9\.]+%"`
-value=`echo $base |egrep -o "[0-9\. ]+$"`
+base=`wget -qO- http://m.gpw.pl/ | egrep -o "<span class=\"green\">[+-][0-9,]+%<\/span>[&nbsp;]+[0-9 \,]+"`
+percent=`echo $base |egrep -o "[-\+]?[0-9,]+%"`
+value=`echo $base |egrep -o "[0-9, ]+$"`
 sign=${percent:0:1}
 color=""
 
